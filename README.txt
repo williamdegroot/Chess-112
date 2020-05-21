@@ -35,7 +35,7 @@ If there is a three-fold-repetition, the player will be alerted and be given the
 
 Press ok to play and enjoy!
 
-
+*Warning: AI on medium and hard settings can take 5-10 seconds to move
 
 
 Created by William DeGroot, Will Fishell, and Arianna Mordy
