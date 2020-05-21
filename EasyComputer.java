@@ -8,23 +8,14 @@ import java.util.ArrayList;
 
 //========================================================================================
 
-public class EasyComputer {
-
-	// MEMBER VARIABLES
-
-	// Computer team
-	Team team;
-
-	// Current board
-	Board board;
+public class EasyComputer extends Computer{
 
 	//========================================================================================
 
 	// CONSTRUCTOR
 	public EasyComputer(Team _team, Board _board) {
 
-		board = _board;
-		team = _team;
+		super(_team,_board);
 
 	} // EasyComputer ()
 
@@ -49,9 +40,9 @@ public class EasyComputer {
 				selected = remainingPieces.get(index);
 
 				// Determine possible moves for the piece selected
-				ArrayList<Square> possibleMoves = selected.getPossibleMoves(board.getSquare(selected.row, 
-					selected.col), board);
-				
+				ArrayList<Square> possibleMoves = selected.getPossibleMoves(board.getSquare(selected.row,
+						selected.col), board);
+
 				// If selected piece has no possible moves, select another random piece
 				if (possibleMoves.size() == 0) {
 					remainingPieces.remove(selected);
@@ -75,7 +66,7 @@ public class EasyComputer {
 		// Switch turns
 		if (team.color == Color.WHITE) {
 			return board.black;
-		
+
 		} else {
 			return board.white;
 		}
