@@ -34,5 +34,10 @@ If there is a stalemate, no team wins. The game will end.
 If there is a three-fold-repetition, the player will be alerted and be given the option to end the game.
 
 Press ok to play and enjoy!
+
+
+
+
+Created by William DeGroot, Will Fishell, and Arianna Mordy
 	
 	
